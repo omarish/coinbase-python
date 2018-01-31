@@ -36,9 +36,9 @@ from coinbase.wallet.model import new_api_object
 from coinbase.wallet.util import check_uri_security
 from coinbase.wallet.util import encode_params
 
-from Crypto.Hash import SHA256
-from Crypto.PublicKey import RSA
-from Crypto.Signature import PKCS1_v1_5
+from Cryptodome.Hash import SHA256
+from Cryptodome.PublicKey import RSA
+from Cryptodome.Signature import PKCS1_v1_5
 
 COINBASE_CRT_PATH = os.path.join(
     os.path.dirname(os.path.realpath(__file__)), 'ca-coinbase.crt')
